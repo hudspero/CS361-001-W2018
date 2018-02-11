@@ -1,5 +1,6 @@
 \documentclass[12pt, letterpaper]{article}
 \usepackage{hyperref}
+\usepackage{graphicx}
 %opening
 \title{Wat2Search-SRP}
 \author{rechstee, hudspero, lindo, milettal, sunamotl 
@@ -14,12 +15,24 @@
 	
 	Our set of targeted users aims to be beginner and intermediate users; those who don’t know what things are, and those to wish to know what specific things are when they know the general information. In the same way that every human being needs to learn how to crawl before they can walk, every user is new at something. And if our tool can even shorten a single call by about 3-4 minutes, that will add up considerably in the long run.
 	
+	Looking at community sites such as Reddit’s Tales From Tech Support~\cite{redditTFTS}, along with Dell and other computer support forums~\cite{dellforums}, it’s clear that there are users who don’t know where to begin when they encounter one or more issues with their computer. Most of these users will attempt to resolve their issues over the phone, meaning there’s not many physical records available to the public. 
+	
 	The only other sources of consolidated, well-defined information for our customer base come from web forums, developer support articles, various haphazardly-made guides, or by calling your IT support line and having the technician explain and fix the problem for the user. Even then, when choosing any of those options, the user is expected to know exactly what their problem is and where to find the fix. If the user doesn’t know what a folder is, what operating system they’re running, or how to restart their machine, how can they be expected to troubleshoot anything?
 	
-	This tool will serve to link all relevant support articles, phone numbers, and even basic, relevant, informational tips into a single centralized source for all Oregon State students and faculty that are supported by the ISCS Service Desk (approval pending for ROOTS, ENGR, CoSine, Forestry, UDHS, and all other support teams). Because this will be a simple web-based application without the need for external database management or complex authentication/encryption, we can make this in Javascript and embed it in HTML. 
+	This tool will serve to link all relevant support articles, phone numbers, and even basic, relevant, informational tips into a single centralized source for all Oregon State students and faculty that are supported by the ISCS Service Desk (approval pending for ROOTS, ENGR, COSINe, Forestry, UDHS, OSUFoundation IT, and all other support teams). Because this will be a simple web-based application without the need for external database management or complex authentication/encryption, we can make this in Javascript and embed it in HTML.
 	
-	The ultimate requirements for our tool are readability (Where am I?), traversability (Where am I going?), good content (What am I looking at?), and some sort of solution to a problem (What is the ending?). Because our tool is an interactive support document, there’s not much of a need for external documentation in the first place. Two stretch goals we have are to have this exported and used in mobile devices, and for our tool to be modified and implemented in other OSU IT services.
-	\\\\\textbf{Use Cases:}
+	While many hardware manufacturers and software developers do have knowledge bases and help documents~\cite{gcflearnfree}, including OSU’s helpdocs~\cite{OSUHD}, as well as phone numbers that can be contacted for further assistance or support, none of these tools actively work with the user in real time in the event that there’s no phone connections, nor make use of directly interacting with the user through a visual medium by guiding them through an easy, simplified, click-minimal, and scroll-minimal system with no changes in the URL.
+	
+	The ultimate features for our tool are readability (Where am I?), traversability (Where am I going?), good content (What am I looking at?), and some sort of solution to a problem (What is the ending?). Because our tool is an interactive support document, there’s not much of a need for external documentation in the first place. Two stretch goals/future features we have are to have this exported and used in mobile devices, and for our tool to be modified and implemented in other OSU IT services.
+	\\\\\textbf{Diagrams:}
+	\begin{itemize}
+		\item Option 1:
+		\\\includegraphics[scale=.75]{option1.png}
+		\item Option 2:
+		\\\includegraphics[scale=.75]{option2.png}
+	\end{itemize}
+
+	\textbf{Use Cases:}
 	
 \begin{enumerate}
 	\item \textbf{Use Case Name:} Setup Wifi
@@ -184,7 +197,8 @@ The three use cases above cover the most important scenarios for our app Wat2Sea
 \\Our progress this week involved setting up our desired communication method and distributing tasks needed to complete this assignment. Initially, we used email to decide our method of communication because we were unable to meet in person from conflicting schedules. We decided to communicate with each other using the mobile application, Discord.  Furthermore, we finished this Software Requirement and Plan(SRP) which includes project information such as our target users and system requirements. This assignment allowed us to test the use of Discord along with Google Doc. 
 Next week, we are going to follow our plan and work on it, and we need to have more communication with each other so we can exchange minds more quickly and improve efficiency. 
 Through discord and emails we were able to distribute specific tasks to individual members. However, we were unfortunately unable to communicate with our customers to meet with them in person. Though, we were able to make good use of their vision statement and presentation. For example, the vision statement helped in determining use cases that are relevant and should be considered and evaluated for the project.
-
-
+\\
+\bibliography{myref}
+\bibliographystyle{plain}
 
 \end{document}

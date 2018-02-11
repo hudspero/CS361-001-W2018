@@ -1,13 +1,18 @@
-# this is a comment
 
 TARGET=Wat2Search-SRP
 
 
 default: pdf
 
-dvi: ${TARGET}.tex 
-	latex ${TARGET}.tex
+bib: bib
+	bibtex ${TARGET}
 
+dvi: ${TARGET}.tex 
+#	run latex twice to get references correct
+	latex ${TARGET}.tex
+#	you can also have a bibtex line here
+#	bibtex $(TARGET)
+	latex $(TARGET).tex
 
 ps: dvi
 	dvips -R -Poutline -t letter ${TARGET}.dvi -o ${TARGET}.ps
@@ -32,4 +37,3 @@ clean-pdf: clean-ps
 
 
 clean: clean-pdf
-
