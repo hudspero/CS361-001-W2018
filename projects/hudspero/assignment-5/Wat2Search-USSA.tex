@@ -1,0 +1,124 @@
+\documentclass[12pt, letterpaper]{article}
+\usepackage{hyperref}
+%opening
+\title{Wat2Search-USSA}
+\author{Evan Rechsteiner rechstee, Robert Hudspeth hudspero, Donghao Lin lindo, Luke Miletta milettal, Lauren Sunamoto sunamotl 
+}
+\begin{document}
+	\maketitle
+	\underline{\textbf{User Stories:}}
+	\begin{enumerate}
+		\item \textbf{User Story 1:}
+		As a new student user, I want to have account troubleshooting so that I can learn more about my ONID account and sign up for an account. Integration of information on how the users can fix or interact with their accounts is part of the four categories users can choose from in the app. We at least need one use case in this category implemented for our prototype. Use case should be done by this week, full documentation on OSU ONID account should be implemented at a later date.
+		\item \textbf{User Story 2:}
+		As a former student, I need to know how to access my transcripts, emails, or any other data that OSU currently has. Details can get lost and are not always explained well over the phone. With readable steps that follow a succinct path summarizing the circumstances, our project will reduce “phone-tag” to a substantial degree.
+		\item \textbf{User Story 3:}
+		As a graduate student, I want to know what kinds of software I can use for free or obtain university licenses for in the current year. Licensed software is a necessity for students who simply can’t afford individual licenses (high-level statistical software starts at 550 dollars and can go as high as 3,000 dollars just for one user). Being able to demonstrate how to access tools that Oregon State uses for its students and teachers will help those interested in conducting the research they need.
+		\item \textbf{User Story 4:}
+		As a user, I want information on connecting to the OSU network so that I can be safe when browsing the web on campus. Integration of information on how the user can fix their networking issues is part of the four categories users can choose from. We at least need one use case in this category implemented for our prototype. Use case should be done by next week, full documentation on OSU network should be implemented at a later date.
+		\item \textbf{User Story 5:}
+		As a user, I want the application to be a web widget so that I can easily troubleshoot without having to leave what I’m working on in my browser. The widget being a widget rather than an application or a webpage means that the user can access it at any time with it as an add-on. This is first priority as this is the kind of program that we are making so it must be made in this way from beginning to end.
+		\item \textbf{User Story 6:}
+		As a user, I want a mobile and web app version so that I can find out what’s wrong when I don’t have a PC available. When troubleshooting for a PC the user may need to use another device to troubleshoot. Adding to ios and android for mobile phone carrying users is less important than the actual app’s primary functions so we are saving it for last.
+		\item \textbf{User Story 7:}
+		As a user, I want a simple user interface so that I can understand where I am in the flowchart without being confused as to why. This is a basic feature that will be our main goal towards the end of the development cycle once we have all of the information for the user written down. 
+		\item \textbf{User Story 8:}
+		As a user, I want to have the troubleshooting sections displayed front and center so that I can choose where I want to start without irrelevant information. This is a feature that we can implement almost immediately since it is the first choice that users make when engaging with the widget.
+		\item \textbf{User Story 9:}
+		As a OSU employed user, I want to be directed to a step by step guide I can follow so that I don’t have to spend time troubleshooting over the phone.This is the main end goal we hope to achieve with users. By directing them to documentation and step by step guides it can save both the user and the helpdesk time. 
+		\item \textbf{User Story 10:}
+		As a user, I want to know how the apps provided to me through OSU work so that I can get the most out of being given access to OSU’s apps. This is a sub category that users can access, it should be done but not before the category it’s under Accounts.
+		\item \textbf{User Story 11:}
+		As a user, I want to be able to return to the previous question screen so that I don’t have to restart the app when I choose the wrong option. This is a top feature we should focus on this week, as it is paramount that users can navigate the app first and foremost.
+		\item \textbf{User Story 12:}
+		As a developer, I want the styling for this app done in CSS so that we can use simple shapes for our user interface. A bit of a continuation of 5 but for the developer using CSS will allow us to make the interface clean using drag and drop functionality and easily adjustable with code.
+	\end{enumerate}
+	
+	
+	
+	\textbf{Corresponding Tasks:}
+	
+	\begin{enumerate}
+	\item \textbf{User Story 1:}  (due at: 3/2) 
+	\begin{itemize}
+		\item The first task we need for implementing our user case that deals with the ONID account troubleshooting is having a working UI, or framework for our web app. This task should not take more than a couple hours for paired programmers to accomplish.
+		\item The second task for this user story is to implement the path for troubleshooting an ONID account. This task is more so about compiling the required diagrams and information than it is about programming. This should not take more than an hour for one developer. This should be implemented after task 1 as without a working framework, the path cannot be programmed.
+	\end{itemize}
+	\item \textbf{User Story 2:}(due at: 3/9)
+	\begin{itemize}
+		\item The first task for this user story, again, is to have a working UI. This is needed to implement a path for the graduated user to take. This is required to be done before any other tasks as it is needed to implement any path.
+		\item The second task for this user story is gathering data on the different methods graduated users can receive their needed documents, such as a transcript. This must be done before task three.
+		\item The last task is to implement the different paths into the web app. This way users can actually access the information gathered and easily solve their issues.
+	\end{itemize}
+	\item \textbf{User Story 3:} (due at: 3/9) 
+	\begin{itemize}
+		\item The first task for this user story (assuming the framework and UI are complete) is to research what applications are offered by Oregon State University. Compiling a list and how to download said software is a necessity.
+		\item The next task, which must be completed after the first task, is to implement the information into a path for the web app and to test and make sure it is correctly functioning.
+	\end{itemize}
+	\item \textbf{User Story 4:} (due at: 3/2) 
+	\begin{itemize}
+		\item Create working and comprehensive UI, so the user can “click”/select “Networking” as the category specific to the issue they wish to handle. This task should take a couple hours through the process of paired programming.
+		\item To handle a specific use case (ex: user setting up wifi connection to OSU network), we will need to display new categories and questions that will help navigate the user to a specific question and instruction set for the task they want to accomplish.  This task can only be achieved following task 1.
+		\item Add design elements to the UI to improve user comprehension including use of specific icons, text, etc.
+	\end{itemize}
+	\item \textbf{User Story 5:} (due at: 3/2) 
+	\begin{itemize}
+		\item Task 1 would entail doing research on how to implement a widget from multiple sources because we have not had much experience creating any.
+		\item Following some research, we would consider different options by testing various ways suggested online.  This would follow task 1.
+		\item Implement a method that is the best fit for the purpose of our project considering factors such as compatibility with the webpage that it will be a component of.  This would be the final task because it requires thorough research and testing.
+	\end{itemize} 
+	\item \textbf{User Story 6:} (Stretch Goal) 
+	\begin{itemize}
+		\item The first task for this user story would be determining the mobile devices we will support such as iPhones. 
+		\item After determining what we will be supporting, the next task will be researching how to create a mobile application that will fulfill what we want to accomplish for this project.
+		\item The third task will be testing and implementing the mobile application with features that allow for the best user navigation and usability.  
+		\item The last task will be deciding on and adding visual features including color scheme, fonts, etc.
+	\end{itemize}
+	\item \textbf{User Story 7:} (due at: 3/2) 
+	\begin{itemize}
+		\item Design a simple, graphically and artistically driven UI to reinforce a sense of location to ensure that users who navigate it never get lost. 
+		\item Choose thematic and familiar colors to further entrench such sensations. 
+	\end{itemize}
+	\item \textbf{User Story 8:} (due at: 3/2)
+	\begin{itemize}
+		\item Design the first scene to display all of the available options to choose from.
+	\end{itemize}
+	\item \textbf{User Story 9:} (due at: 3/9)
+	\begin{itemize}
+		\item Creating clear step by step guide should be completed before building user interface so that the key feature things can be designed and the app library can be built logically. 
+		\item Starting from the user experience is very important due to users are not willing to use an app that looks complex and with bad logic.
+	\end{itemize}
+	\item \textbf{User Story 10:} (due at: 3/9)
+	\begin{itemize}
+		\item Add the documentation related to how the apps.
+		\item have the framework for actually getting there figured out. Once we have the question tree figured out we can move onto linking the documentation. 
+	\end{itemize}
+	\item \textbf{User Story 11:} (due at: 3/2)
+	\begin{itemize}
+		\item Returning to the previous task is a key feature to navigating the widget, therefore we will make sure that it’s one of the first features implemented.
+		\item This can be done just working with Javascript and loading a different “screen” when an option is clicked. Should be done with the app library that use. 
+	\end{itemize}
+	\item \textbf{User Story 12:} (due at: 3/9)
+	\begin{itemize}
+		\item The styling and CSS we should save the task for later, as it is just to make sure that the interface is visually appealing. 
+		\item Make the meat of the program first.
+	\end{itemize}
+\end{enumerate}	
+\underline{\textbf{UML Sequence Diagram or Spike:}}
+\begin{itemize}
+	\item 2. For this spike, we must test the path implementation through a simple web site we use to test the path before the full UI is created. From this, we can test layouts of the information such as how the diagrams will go along the site. This is a spike as it does not need to be implemented in our full app but rather it can be designed and reviewed as a solo page. This page will be passed around to each teammate to be reviewed for design and any changes that are wanted can be changed right then and there.
+	\item 3.Again, this spike has to deal with the individual page layout and design. We can take the spike from user story three and reuse it to design this web page as well. From there, any designs or changes can be updated with the webpage and a final design can be chosen. This is better than designing the whole website one way and having to change each individual page later on to fit its informational needs. The programs will be displayed in an alphabetical list with images and descriptions next to them.
+	\item 9. For this spike, we will design different layouts for the UI and give them to seperate people. From there we will ask them to review the design to see its ease of use. The design the does the best can be implemented on our final product. Doing this will ensure users have a clean user experience and do not encounter difficulties while navigating the application. The spike will be handled next week and will use different color schemes and diagrams for the UI. This will allow for the best UI for our project.
+	\item 10. For this spike, we will design a page layout that handles multiple programs and gives a brief overview for how they work. This way, we can have a clean look when handling as much information as is required for how multiple programs work. We may also choose to encode separate pages for each application if that is deemed easier to do through the spike. Coding the pages will give us a headstart on completing our application.
+	\item 12. This spike will have many different prototypes that we will test. We can make a small test page to view different layouts and color schemes for the program. We will pass the prototypes around to the group members and from there they can edit it to see what the best match is. This ensures that the CSS is good for the program and is visually appealing. A non-visually appealing app will have a negative impact on the user. They will be less likely to use the app, which takes away from its usefulness.
+\end{itemize}
+\underline{\textbf{Stories Due Next Week:}}
+According to the user stories listed as a group we have planned to implement: 2,3,9,10, and 12 by next week.  We plan to meet within the next few days at the library and create the framework of the program together. The framework includes setting up a basic and working user interface that will have uniform features (font text, color scheme, etc.).  As a group we will be able to decide important decisions on framework together; allowing for each member to voice their opinions and unique contributions to the program.  Then, will be splitting up the tasks to ensure that each person is assigned an equal amount of work and difficulty.  At the moment we have assigned the user stories in which Luke will do user stories 2 and 3, Donghao will do user story 9, and Evan will do user stories 10 and 12 by friday, March 9th.
+The implementation of our project’s program will require setting up a gitHub so that we can collaboratively work on the program individually and ensure that any changes are done with approval of every group member.  This will make sure that any implementations among the group will complement each other.  Along with gitHub, we will continue to use the Discord app to communicate with each other and provide updates on the completion of our assigned tasks.  If a member feels that they will not be able to accomplish their assigned task within the decided due date the group will need to decide as a whole how to proceed, which may involve assistance by other members or pushing back the date in which we projected to complete such task.
+\\\\\\\\\\\\\\\\
+\\\underline{\textbf{Meeting Report:}}
+\\We scheduled to meet up Saturday at 1:00pm in the library to work on this assignment and figure out the schedule for our user stories for the rest of the term. Evan and Robert as the customers did the user stories, building off of a guide Robert had created with various problems that arise within Information Services. Donghao did the UML diagrams for this assignment. For the corresponding tasks section we split the user stories as 3 per person while Dongao was doing the UML diagrams. Lauren covered the Stories Due Next Week portion of the assignment after much deliberation on the USer Stories during our meeting. Discussing the order in which we completed each user story as developers helped us to nail down when we’ll be able to complete the widget as well as how much we can complete realistically in the time left in the term. Communication outside of in-person meetups continued over Discord. Overall we have a weekly pattern to work off of now as we work on these written assignments and plan around the actual program.
+
+
+
+\end{document}
