@@ -1,0 +1,16 @@
+@font-face {
+	font-family: FGD;
+	src: url("Franklin_Gothic_Demi_Regular.ttf");
+}
+
+p {
+	font-family: FGD;
+	font-size: 25px;
+	color: white;
+	text-shadow: 1px 1px 2px black, 2px 2px 1px black, 0 0 7px black;
+	text-align: center;
+}
+
+body {
+	background-color: #ececec;
+}
