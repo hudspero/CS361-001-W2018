@@ -1,0 +1,124 @@
+/* Element Attributes */
+@font-face {
+	font-family: FGD;
+	src: url("Franklin_Gothic_Demi_Regular.ttf");}
+
+p, td {
+	font-family: FGD;
+	font-size: 22px;
+	color: white;
+	padding: 7px;
+	text-shadow: 1px 1px 2px black, 2px 2px 1px black, 0 0 7px black;
+	text-align: center;}
+
+body {
+	background-color: #ececec;}	
+
+button {
+	background-color: black;
+	color: white;
+	border: none;
+	font-size: 15px;
+	cursor: pointer;
+	padding: 15px 32px;
+	display: inline-block;}
+	
+button:hover {
+	box-shadow: 1px 1px 2px gray, 2px 2px 1px gray, 0 0 7px black;}
+
+td:hover {
+	box-shadow: 1px 1px 2px gray, 2px 2px 1px gray, 0 0 7px black;}
+
+.center {
+	margin-left: auto;
+	margin-right: auto;}
+
+	
+/* mainTable Attributes*/	
+#Reg, #Acc, #Hdw, #Stw, #MD, #PM, #NW {
+	text-align: center;
+	border-radius: 5px;
+	padding: 8px;
+	width: 200px;
+	height: 150px;}
+		
+	#Reg {background-color: #DC1800;}
+	#Acc {background-color: #E64805;}
+	#Hdw {background-color: #F3D908;}
+	#Stw {background-color: #06E94A;}
+	#MD {background-color: #00DEE9;}
+	#PM {background-color: #420CF3;}
+	#NW {background-color: #B207F3;}
+
+/* Level 1 subtable attributes */
+#RegTable, #AccTable, #HdwTable, #StwTable, #MDTable, #PMTable, #NWTable {
+	display: none;}
+
+	/* Level 2 subtable attributes */
+	#ACurrent,
+		#ChangeONIDPW,
+	#PPrinters,
+		#PersonalPrinters,
+	#NWireless,
+		#SetupWirelessNW{
+			display: none;}
+	
+	/* Options attributes */
+	#R1, #R2, #R3, 
+	#A1, #A2, #A3, #A4, #A5,
+		#ACurrent1, #ACurrent2,
+			#ChangeONIDPW,
+	#H1, #H2, 
+	#S1, #S2, #S3, #S4, #S5,
+	#M1, #M2, #M3,
+	#P1, #P2,
+		#Printers1, #Printers2,
+			#PersonalPrinters,
+	#N1, #N2, #N3, #N4,
+		#NWireless1, #NWireless2, #NWireless3, #NWireless4,
+			#SetupWirelessNW {
+				text-align: left;
+				border-radius: 5px;
+				padding: 20px;
+				width: 750px;}
+	
+	#R1 {background-color: #B01300;}
+	#R2 {background-color: #C61500;}
+	#R3 {background-color: #DF2F19;}
+	
+	#A1 {background-color: #B83904;}
+	#A2 {background-color: #CF4004;}
+		#ACurrent1 {background-color: #BA3903;}
+		#ACurrent2 {background-color: #D3531D;}
+	#A3 {background-color: #E85A1D;}
+	#A4 {background-color: #EB6C36;}
+	#A5 {background-color: #ED7E50;}
+	
+	#H1 {background-color: #DAC307;}
+	#H2 {background-color: #F4DC20;}
+	
+	#S1 {background-color: #04A333;}
+	#S2 {background-color: #04BA3B;}
+	#S3 {background-color: #05D142;}
+	#S4 {background-color: #1EEB5C;}
+	#S5 {background-color: #37ED6E;}
+	
+	#M1 {background-color: #00B1BA;}
+	#M2 {background-color: #00C7D1;}
+	#M3 {background-color: #19E1EB;}
+	
+	#P1 {background-color: #3B0ADA;}
+		#Printers1 {background-color: #3509C4;}
+		#Printers2 {background-color: #4E22DD;}
+	#P2 {background-color: #5424F4;}
+	
+	#N1 {background-color: #8E05C2;}
+		#NWireless1 {background-color: #71049B;}
+		#NWireless2 {background-color: #7F04AE;}
+		#NWireless3 {background-color: #991DC8;}
+		#NWireless4 {background-color: #A436CE;}
+	#N2 {background-color: #A006DA;}
+	#N3 {background-color: #B91FF4;}
+	#N4 {background-color: #C138F5;}
+	
+#container {text-align: center;}

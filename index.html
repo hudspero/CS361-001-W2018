@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"> 
+		<link rel="stylesheet" href="style.css" />
+		<script src="code.js"></script>
+		<title>CS361 Project Demo</title>
+	</head>
+	
+	<body>
+		<header>
+			<p>Wat2Search Demo</p>
+		</header>
+		
+		<!-- MAIN TABLE -->
+		<table class="center" id="mainTable">
+			<tr>
+				<td id="Reg" onclick="Reg()">
+				Registration
+				<br />
+				<img src="Icons/Registration.png">
+				</td>
+				
+				<td id="Acc" onclick="Acc()">
+				Accounts
+				<br />
+				<img src="Icons/Accounts.png">
+				</td>
+				
+				<td id="Hdw" onclick="Hdw()">
+				Hardware
+				<br />
+				<img src="Icons/Hardware.png">
+				</td>
+				
+				<td id ="Stw" onclick="Stw()">
+				Software
+				<br />
+				<img src="Icons/Software.png">
+				</td>
+			</tr>
+			<tr>
+				<td id="MD" onclick="MD()">
+				Mobile Devices
+				<br />
+				<img src="Icons/MobileDevices.png">
+				</td>
+				
+				<td id="PM" onclick="PM()">
+				Printers & Monitors
+				<br />
+				<img src="Icons/PrintersDevices.png">
+				</td>
+				
+				<td id="NW" onclick="NW()">
+				Networking & Wi-Fi
+				<br />
+				<img src="Icons/Wifi.png">
+				</td>
+				
+				<td>
+				Can't find your issue? Dial (541) 737-8787
+				</td>
+			</tr>
+		</table>
+		
+			<!-- RED: Registration -->
+			<table class="center" id="RegTable">
+				<tr>
+					<td id="R1">
+					How do I sign up for classes?
+					</td>
+				</tr>
+				
+				<tr>
+					<td id="R2">
+					I'm getting an error message registering for classes
+					</td>
+				</tr>
+				
+				<tr>
+					<td id="R3">
+					How do I get rid of holds?
+					</td>
+				</tr>
+			</table>
+			
+			<!-- ORANGE: Accounts -->
+			<table class="center" id="AccTable">
+				<tr>
+					<td id="A1">
+					New Students
+					</td>
+				</tr>
+				
+				<tr>
+					<td id="A2" onclick="ACurrent()">
+					Current Students
+					</td>
+				</tr>
+				
+				<tr>
+					<td id="A3">
+					Former Students
+					</td>
+				</tr>
+				
+				<tr>
+					<td id="A4">
+					Student Employees
+					</td>
+				</tr>
+				
+				<tr>
+					<td id="A5">
+					Other Employees
+					</td>
+				</tr>
+			</table>
+			
+				<!-- Current Students -->
+				<table class="center" id="ACurrent">
+					<tr>
+						<td id="ACurrent1" onclick="ChangeONIDPW()">
+						How do I change my ONID password?
+						</td>
+					</tr>
+					
+					<tr>
+						<td id="ACurrent2">
+						How do I set up/change my alternate contact information?
+						</td>
+					</tr>
+				</table>
+				
+					<!-- Change ONID Password -->
+					<table class="center" id="ChangeONIDPW">
+						<tr>
+							<td id="ACurrent1">
+							<ol>
+								<li>Go to onid.oregonstate.edu.</li>
+								<li>On the top left of the page, click "Change Password".</li>
+								<li>If you do know your current ONID password, select the first option and follow the directions on-screen.</li>
+								<li>If you do not know your current ONID password, select the second option. You will be prompted to enter your OSU ID number, birth date, first name, and last name.</li>
+								<li>You will be prompted to send a Password Reset PIN to a phone number and alternate email. If you have no information displayed, you will need to contact the Office of the Registrar. (541) 737-4331</li>
+								<li>When you receive the PIN, enter it and click Submit.</li>
+							</ol>
+							When creating a new password, it must meet the following categories:
+							<ul>
+								<li>Cannot exactly match any previous passwords.</li>
+								<li>Cannot exactly match a word found in the English dictionary.</li>
+								<li>Must be at least eight (8) characters long.</li>
+								<li>Must contain one (1) uppercase letter, one (1) lowercase letter, and one (1) number.</li>
+							</ul>
+							If you have difficulty changing your ONID password, call either (541) 737-8787 or (541) 737-4331.
+							</td>
+						</tr>
+					</table>
+			
+			<!-- YELLOW: Hardware -->
+			<table class="center" id="HdwTable">
+				<tr>
+					<td id="H1">
+					CN-Supported Devices
+					</td>
+				</tr>
+				
+				<tr>
+					<td id="H2">
+					Personal Devices
+					</td>
+				</tr>
+			</table>
+			
+			<!-- GREEN: Software -->
+			<table class="center" id="StwTable">
+				<tr>
+					<td id="S1">
+					Microsoft Office
+					</td>
+				</tr>
+				
+				<tr>
+					<td id="S2">
+					Microsoft Outlook & Exchange
+					</td>
+				</tr>
+				
+				<tr>
+					<td id="S3">
+					Web browsers (Chrome, Firefox, Edge, Safari)
+					</td>
+				</tr>
+				
+				<tr>
+					<td id="S4">
+					Citrix & apps.oregonstate.edu
+					</td>
+				</tr>
+				
+				<tr>
+					<td id="S5">
+					Other software
+					</td>
+				</tr>
+			</table>
+			
+			<!-- CYAN: Mobile Devices -->
+			<table class="center" id="MDTable">
+				<tr>
+					<td id="M1">
+					I need to connect to Wi-Fi
+					</td>
+				</tr>
+				
+				<tr>
+					<td id="M2">
+					I need to set up my Gmail/Outlook
+					</td>
+				</tr>
+			
+				<tr>
+					<td id="M3">
+					How do I print from my phone?
+					</td>
+				</tr>
+			</table>
+			
+			<!-- BLUE: Printers & Monitors -->
+			<table class="center" id="PMTable">
+				<tr>
+					<td id="P1" onclick="PPrinters()">
+					Printers
+					</td>
+				</tr>
+				
+				<tr>
+					<td id="P2">
+					Monitors
+					</td>
+				</tr>
+			</table>
+			
+				<!-- Printers -->
+				<table class="center" id="PPrinters">
+					<tr>
+						<td id="Printers1">
+						Departmental/Office Printers
+						</td>
+					</tr>
+					
+					<tr>
+						<td id="Printers2" onclick="PersonalPrinters()">
+						Personal Printers
+						</td>
+					</tr>
+				</table>
+				
+					<!-- Personal Printers -->
+					<table class="center" id="PersonalPrinters">
+						<tr>
+							<td id="Printers1">
+							Because personal printers can be a network security liability, 
+							we strongly recommend that you connect to a personal printer by 
+							a USB cable if you use a personal printer on-campus.
+							<ul>
+								<li>Is the printer currently plugged in and turned on?</li>
+								<li>Have you tried turning your printer off and on? Unplugging and replugging the cable?</li>
+								<li>Is your computer notifying you that a connection could not be made?</li>
+							</ul>
+							If you're still having difficulty, contact the printer's manufacturer or call (541) 737-8787.
+							</td>
+						</tr>
+					</table>
+			
+			<!-- PURPLE: Networking & Wi-Fi -->
+			<table class="center" id="NWTable">
+				<tr>
+					<td id="N1" onclick="NWireless()">
+					Help with wireless networks
+					</td>
+				</tr>
+				
+				<tr>
+					<td id="N2">
+					Help with wired networks
+					</td>
+				</tr>
+				
+				<tr>
+					<td id="N3">
+					Where is the Internet down?
+					</td>
+				</tr>
+				
+				<tr>
+					<td id="N4">
+					Connecting to network drive(s)
+					</td>
+				</tr>
+			</table>
+			
+				<!-- Help with wireless networks -->
+				<table class="center" id="NWireless">
+					<tr>
+						<td id="NWireless1">
+						My wireless connection is unstable
+						</td>
+					</tr>
+					
+					<tr>
+						<td id="NWireless2">
+						My computer/phone lost connection to the internet
+						</td>
+					</tr>
+					
+					<tr>
+						<td id="NWireless3" onclick="SetupWirelessNW()">
+						I want to setup a wireless network
+						</td>
+					</tr>
+					
+					<tr>
+						<td id="NWireless4">
+						What is VPN? How do I set it up?
+						</td>
+					</tr>
+				</table>
+				
+					<!-- I want to setup a wireless network -->
+					<table class="center" id="SetupWirelessNW">
+						<tr>
+							<td id="NWireless3">
+							For Windows (Windows 7 and above):
+							<br /><ol>
+								<li>Click the network icon in the bottom right.</li>
+								<br>
+								<img src = "Icons/W1.png">
+								<br>
+								<li>Click on the network you wish to connect to.</li>
+								<br>
+								<img src = "Icons/W2.png">
+								<br>
+								<li>Click Connect or double-click on the name.</li>
+							</ol>
+							For Macintosh (10.10 Yosemite and above):
+							<br /><ol>
+								<li>Click on the Apple icon in the top left.</li>
+								<li>Select System Preferences.</li>
+								<br>
+								<img src = "Icons/M1.png" id="smallpic" style="width: "75px"; height: "150px">
+								<br>
+								<li>Go to Network</li>
+								<br>
+								<img src = "Icons/M3.png">
+								<br>
+								<li>Click on the network you wish to connect to.</li>
+							</ol><br />
+							If you need to enter a username and password, you will be prompted to enter them. 
+							Your device will tell you if you are connected, or if a connection cannot be established. 
+							If you need further help, please contact the IS Service Desk at (541) 737-8787.
+							</td>
+						</tr>
+					</table>
+				
+				
+				
+		<br />
+		<div id="container">
+			<!-- <button type="button" onclick="GoBack()">Go Back</button> -->
+			<button type="button" onclick="StartOver()">Start Over</button>
+		</div>
+		<footer>
+			<p>by Robert Hudspeth, Luke Miletta, Lauren Sunamoto, Donghao Lin, and Evan Rechsteiner</p>
+		</footer>
+	</body>
+</html>
